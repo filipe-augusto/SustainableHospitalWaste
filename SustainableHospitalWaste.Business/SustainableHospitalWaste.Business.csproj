@@ -47,6 +47,10 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
+    <ProjectReference Include="..\SustainableHospitalWaste.Data\SustainableHospitalWaste.Data.csproj">
+      <Project>{fb5888ee-08ed-4159-af62-b7a199065eef}</Project>
+      <Name>SustainableHospitalWaste.Data</Name>
+    </ProjectReference>
     <ProjectReference Include="..\SustainableHospitalWaste.Entities\SustainableHospitalWaste.Entities.csproj">
       <Project>{AB430933-22FF-4A97-BD3F-219F40136E68}</Project>
       <Name>SustainableHospitalWaste.Entities</Name>

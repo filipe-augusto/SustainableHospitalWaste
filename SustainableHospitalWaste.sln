@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SustainableHospitalWaste.Da
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SustainableHospitalWaste.Web", "SustainableHospitalWaste.Web\SustainableHospitalWaste.Web.csproj", "{706D6056-78F0-452F-93C0-7245561DBC55}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SustainableHospitalWaste.Tests", "SustainableHospitalWaste.Tests\SustainableHospitalWaste.Tests.csproj", "{17D7546C-D3B0-45C4-9B13-A6249CA250EE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{706D6056-78F0-452F-93C0-7245561DBC55}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{706D6056-78F0-452F-93C0-7245561DBC55}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{706D6056-78F0-452F-93C0-7245561DBC55}.Release|Any CPU.Build.0 = Release|Any CPU
+		{17D7546C-D3B0-45C4-9B13-A6249CA250EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{17D7546C-D3B0-45C4-9B13-A6249CA250EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{17D7546C-D3B0-45C4-9B13-A6249CA250EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{17D7546C-D3B0-45C4-9B13-A6249CA250EE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

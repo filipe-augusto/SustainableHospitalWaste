@@ -1,4 +1,5 @@
 ﻿using SustainableHospitalWaste.Business.Interfaces;
+using SustainableHospitalWaste.Data.Interfaces;
 using SustainableHospitalWaste.Entities;
 using System;
 using System.Collections.Generic;
@@ -7,9 +8,9 @@ namespace SustainableHospitalWaste.Business.Repositories
 {
     public class WasteGroupBusiness : IWasteGroupBusiness
     {
-        private readonly IWasteGroupBusiness _wasteGroupData;
+        private readonly IWasteGroupData _wasteGroupData;
 
-        public WasteGroupBusiness(IWasteGroupBusiness wasteGroupData)
+        public WasteGroupBusiness(IWasteGroupData wasteGroupData)
         {
             _wasteGroupData = wasteGroupData;
         }
@@ -18,7 +19,7 @@ namespace SustainableHospitalWaste.Business.Repositories
         {
             if (string.IsNullOrEmpty(wasteGroup.Name))
                 throw new ArgumentException("O nome do grupo de resíduos não pode estar vazio.");
-            
+
             _wasteGroupData.Create(wasteGroup);
         }
 
@@ -36,7 +37,7 @@ namespace SustainableHospitalWaste.Business.Repositories
         {
             if (wasteGroup.Id <= 0)
                 throw new ArgumentException("ID do grupo de resíduos inválido.");
-            
+
             _wasteGroupData.Update(wasteGroup);
         }
 
@@ -44,7 +45,7 @@ namespace SustainableHospitalWaste.Business.Repositories
         {
             if (id <= 0)
                 throw new ArgumentException("ID do grupo de resíduos inválido.");
-            
+
             _wasteGroupData.Delete(id);
         }
     }
